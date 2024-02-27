@@ -23,7 +23,7 @@ public class Trapezoid extends Shape {
     }
 
     @Override
-    double PriceForEachBlock() {
+    double BlockPrice() {
         return (this.PerchArea() * 1100000);
     }
     

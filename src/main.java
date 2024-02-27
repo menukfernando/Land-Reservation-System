@@ -98,7 +98,7 @@ public class main {
         System.out.println("\nDisplaying Block's Size and prices...\n");
         for (int i = 0; i < shapes.size(); i++) {
                     System.out.println(String.format(CYAN+shapes.get(i).name+"\nArea in Perches: "+"%.2f", shapes.get(i).PerchArea())+" perches");
-                    System.out.println(String.format("Price of the Block: Rs."+"%,.2f",shapes.get(i).PriceForEachBlock()));
+                    System.out.println(String.format("Price of the Block: Rs."+"%,.2f",shapes.get(i).BlockPrice()));
                     System.out.println("-----------------------------------");
             }
         System.out.println(" ");
@@ -143,7 +143,7 @@ public class main {
 
             System.out.print("Enter your choice (1-2): ");
             int paymentChoice = input.nextInt();
-            double discountedPrice = selectedBlock.PriceForEachBlock();
+            double discountedPrice = selectedBlock.BlockPrice();
             
             switch (paymentChoice) {
                 
@@ -209,7 +209,7 @@ public class main {
             System.out.println("---------------------------");
             System.out.println(reserveBlock.get(i).name);
             System.out.println(String.format("Area of the Block: "+"%.2f", reserveBlock.get(i).PerchArea())+" perches");
-            System.out.println(String.format("Full Price: Rs."+"%,.2f", reserveBlock.get(i).PriceForEachBlock()));
+            System.out.println(String.format("Full Price: Rs."+"%,.2f", reserveBlock.get(i).BlockPrice()));
             System.out.println("___________________________");
             System.out.println("Buyer Name: "+name);
             System.out.println("Buyer Email: "+email);

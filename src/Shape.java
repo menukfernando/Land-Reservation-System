@@ -18,7 +18,7 @@ abstract public class Shape {
     double base_2;
     
     abstract double PerchArea();
-    abstract double PriceForEachBlock();
+    abstract double BlockPrice();
 
     
 }
