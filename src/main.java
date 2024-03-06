@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -30,6 +29,7 @@ public class main {
         //create objects
         Square A = new Square("A-Block", 59, 59);
         Square B = new Square("B-Block",59, 59);
+        Trapeziod_Triangle C = new Trapeziod_Triangle("C-Block", 59, 59);
         Rectangle D = new Rectangle("D-Block", 39.3, 73);
         Rectangle E = new Rectangle("E-Block", 39.3, 73);
         Rectangle F = new Rectangle("F-Block", 39.3, 73);
@@ -39,6 +39,7 @@ public class main {
         //add shapes to the the arraylist "shapes"
         shapes.add(A);
         shapes.add(B);
+        shapes.add(C);
         shapes.add(D);
         shapes.add(E);
         shapes.add(F);
@@ -178,7 +179,9 @@ public class main {
                     System.out.print("The full amount of the block is Rs.");
                     System.out.println(String.format("%,.2f", discountedPrice));
                     // Ask the user to enter the payment amount
-                    System.out.println("Enter Partial Amount: ");
+                    System.out.print("A minimum of 10% of the block price must be paid. (Rs.");
+                    System.out.println(String.format("%,.2f", discountedPrice * 10/100)+")");
+                    System.out.println("Enter Partial Amount: "); 
                     double partialAmount = input.nextDouble();                   
                                        
                     if (partialAmount > (discountedPrice-partialAmount)) {
@@ -224,6 +227,4 @@ public class main {
         System.out.println("Exiting the program...");
         System.exit(0);
     }
-
-
 }

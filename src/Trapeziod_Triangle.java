@@ -8,18 +8,22 @@
  *
  * @author Menuk Fernando
  */
-public class PedestalPath extends Shape{
-    PedestalPath(String name){
+public class Trapeziod_Triangle extends Shape{
+
+    public Trapeziod_Triangle(String name, double length, double width) {
         this.name = name;
+        this.length = length;
+        this.width = width;     
     }
 
     @Override
     double PerchArea() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return ((length*width)-((26*35)/2))/272.25;
     }
 
     @Override
     double BlockPrice() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return (this.PerchArea()* 1000000);
     }
+    
 }
