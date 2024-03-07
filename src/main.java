@@ -29,7 +29,7 @@ public class main {
         //create objects
         Square A = new Square("A-Block", 59, 59);
         Square B = new Square("B-Block",59, 59);
-        Trapeziod_Triangle C = new Trapeziod_Triangle("C-Block", 59, 59);
+        Diamond C = new Diamond("C-Block", 59, 59);
         Rectangle D = new Rectangle("D-Block", 39.3, 73);
         Rectangle E = new Rectangle("E-Block", 39.3, 73);
         Rectangle F = new Rectangle("F-Block", 39.3, 73);
