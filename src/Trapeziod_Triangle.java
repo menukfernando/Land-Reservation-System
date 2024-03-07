@@ -8,9 +8,9 @@
  *
  * @author Menuk Fernando
  */
-public class Trapeziod_Triangle extends Shape{
+public class Diamond extends Shape{
 
-    public Trapeziod_Triangle(String name, double length, double width) {
+    public Diamond(String name, double length, double width) {
         this.name = name;
         this.length = length;
         this.width = width;     
